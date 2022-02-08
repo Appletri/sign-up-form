@@ -1,0 +1,183 @@
+@font-face {
+  font-family: customFont;
+  src: url(./fonts/kiona_2/Kiona-Regular.ttf);
+}
+
+@font-face {
+  font-family: customFontBold;
+  src: url(./fonts/kiona_2/FontsFree-Net-Kiona-Bold.ttf);
+}
+
+html body{
+  font-size: 1.2rem;
+  padding: 0px;
+  margin: 0px;
+  font-family: customFont;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  width:100vw;
+}
+
+.side-hero {
+  flex-grow: 1;
+  position: relative;
+  width: 60vw;
+  min-width: 345px;
+  height: 100vh;
+  background: url(./images/sebastian-staines-PL3IgSokBLU-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.side-hero div {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+  line-height: 2rem;
+  padding: 0px 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-hero img {
+  width: 5rem;
+  padding: 10px;
+}
+
+.side-hero p {
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.575);
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+}
+
+.form-section {
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-grow: 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.2rem 2vw 3rem 2vw;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.header, .submit-section {
+  padding: 0px 2vw;
+}
+
+.header, .side-hero, .submit-section button{
+  font-family: customFontBold;
+}
+
+form {
+  display: flex;
+  width: 60vw;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+label {
+  position: relative;
+  width: 15rem;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(173, 73, 173);
+}
+.submit-section {
+  margin-top: 2rem;
+}
+
+button[type='submit'] {
+  padding: .8rem 1.3rem;
+  font-size: 1.3rem;
+  background-color: rgb(173, 73, 173);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: -1px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+button[type='submit']:hover {
+  background-color: rgb(126, 39, 126);
+}
+
+input {
+  font-family: customFontBold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: .9rem;
+  margin-top: 3px;
+}
+
+input:focus {
+  border: none;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+  outline: none;
+}
+
+input:invalid:focus {
+  border: 2px solid rgb(255, 69, 100)
+}
+
+input:focus:valid {
+  border: rgb(0, 183, 255) 2px solid;
+}
+
+.error {
+  font-family: customFontBold;
+  font-size: .7rem;
+  color: rgb(255, 69, 100);
+  position: absolute;
+}
+
+@media screen and (max-width: 850px) {
+  
+  .main{
+    flex-direction: column;
+  }
+  .side-hero{
+    width: 100vw;
+    height: 20rem;
+  }
+
+  .header div, .input-section, .submit-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-section, form, .submit-section{
+    width: 100vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  
+  label {
+    margin-bottom: 25px;
+  }
+}
