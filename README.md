@@ -1,5 +1,5 @@
 # Sign-up Form
-![](https://github.com/Appletri/Appletri/blob/main/assets/sign-up-form.JPG | width=300)
+![](https://github.com/Appletri/Appletri/blob/main/assets/sign-up-form.JPG)
 
 ## Links
 - [Try Sign-up Form here!](https://Appletri.github.io/sign-up-form/)
